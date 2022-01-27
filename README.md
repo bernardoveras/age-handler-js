@@ -2,20 +2,20 @@
 
 ### Functionalities:
 
-##### Olders
+#### Olders
 - Get ages 18+
 
 ---
 
-##### Youngers
+#### Youngers
 - Get ages under 18
   
 ---
 
-##### Older than
+#### Older than
 - Get ages greater than a number
 
 ---
 
-##### Younger than
+#### Younger than
 - Get ages less than a number

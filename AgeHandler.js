@@ -20,12 +20,16 @@ class AgeHandler {
 
     return youngs;
   }
+
+  isOlderThan(age) { return this.ages.filter((v) => v > age); }
 }
 
-const ageHandler = new AgeHandler([18, 20]);
+const ageHandler = new AgeHandler([10, 12, 20, 22, 23, 24, 30, 40, 70]);
 
 const olders = ageHandler.olders();
 const youngs = ageHandler.youngs();
+const agesOlderThanTwenty = ageHandler.isOlderThan(21);
 
 console.log(`Olders: ${olders}`);
 console.log(`Youngs: ${youngs.length > 0 ? youngs : "None"}`);
+console.log(`Is older than 20: ${agesOlderThanTwenty.length > 0 ? agesOlderThanTwenty : "None"}`);
